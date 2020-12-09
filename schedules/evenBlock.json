@@ -1,0 +1,31 @@
+{
+  "name": "Even Block",
+  "periods": [
+    {
+      "name": "0",
+      "start": 24000,
+      "end": 27900,
+      "current": true
+    },
+    {
+      "name": "2",
+      "start": 28800,
+      "end": 35400
+    },
+    {
+      "name": "4",
+      "start": 36600,
+      "end": 43200
+    },
+    {
+      "name": "Lunch",
+      "start": 43200,
+      "end": 45900
+    },
+    {
+      "name": "6",
+      "start": 46500,
+      "end": 53100
+    }
+  ]
+}
