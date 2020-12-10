@@ -28,6 +28,18 @@ export class Schedule {
 
         return null;
     }
+
+    nextPeriod(dateTime: DateTime): Period {
+        const time = (dateTime - dateTime.startOf('day')) / 1000
+
+        for (const period of this.periods) {
+            if (time < period.start) {
+                return period
+            }
+        }
+
+        return null;
+    }
 }
 
 const schedules: Record<string, Schedule> = {
