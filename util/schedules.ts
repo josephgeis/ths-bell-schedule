@@ -43,16 +43,16 @@ export class Schedule {
 }
 
 const schedules: Record<string, Schedule> = {
-    evenBlock: new Schedule(require("./evenBlock.json")),
-    oddBlock: new Schedule(require("./oddBlock.json")),
-    traditional: new Schedule(require('./traditional.json')),
+    evenBlock: new Schedule(require("../schedules/evenBlock.schedule.json")),
+    oddBlock: new Schedule(require("../schedules/oddBlock.schedule.json")),
+    traditional: new Schedule(require('../schedules/traditional.schedule.json')),
     empty: new Schedule({name: "No Schedule", periods: []})
 }
 
 
 const dayMappings: Record<number, Schedule> = {
     0: schedules.empty,
-    1: schedules.empty,
+    1: schedules.traditional,
     2: schedules.evenBlock,
     3: schedules.oddBlock,
     4: schedules.evenBlock,

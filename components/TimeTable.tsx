@@ -1,6 +1,6 @@
 import {Table} from "react-bootstrap";
 import {DateTime} from 'luxon';
-import {Schedule} from '../schedules'
+import {Schedule} from '../util/schedules'
 import {toBase64} from "next/dist/next-server/lib/to-base-64";
 
 export function TimeTableBlock({block, dateTime, ...props}) {

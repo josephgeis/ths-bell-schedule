@@ -1,0 +1,40 @@
+{
+  "name": "Traditional",
+  "periods": [
+    {
+      "name": "1",
+      "start": 31200,
+      "end": 33900
+    },
+    {
+      "name": "2",
+      "start": 34500,
+      "end": 37200
+    },
+    {
+      "name": "3",
+      "start": 37800,
+      "end": 40500
+    },
+    {
+      "name": "4",
+      "start": 41100,
+      "end": 43800
+    },
+    {
+      "name": "Lunch",
+      "start": 43800,
+      "end": 46500
+    },
+    {
+      "name": "5",
+      "start": 47100,
+      "end": 49800
+    },
+    {
+      "name": "6",
+      "start": 50400,
+      "end": 53100
+    }
+  ]
+}

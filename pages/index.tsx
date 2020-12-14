@@ -1,6 +1,6 @@
 import {Container} from "react-bootstrap"
 import {useEffect, useState} from "react";
-import {getTodaySchedule} from "../schedules";
+import {getTodaySchedule} from "../util/schedules";
 
 import {DateTime} from "luxon";
 import {TimeTable} from "../components/TimeTable";
@@ -10,8 +10,8 @@ export default function ClockScreen() {
     let currentDateTime: DateTime = DateTime.fromMillis(currentTimestamp)
 
     let schedule = getTodaySchedule(currentDateTime)
-    const currentPeriod = schedule.currentPeriod(currentDateTime)
-    const nextPeriod = schedule.nextPeriod(currentDateTime)
+    const currentPeriod = schedule?.currentPeriod(currentDateTime)
+    const nextPeriod = schedule?.nextPeriod(currentDateTime)
 
     useEffect(() => {
         // update time every second
@@ -40,7 +40,9 @@ export default function ClockScreen() {
                     : null}
             </div>
 
+            {schedule ?
             <TimeTable schedule={schedule} dateTime={currentDateTime}/>
+            : null}
         </Container>
     )
 }

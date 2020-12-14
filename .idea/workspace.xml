@@ -5,13 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="19c2d0e1-ebe6-408c-8d04-32bb55df91d5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/ths-bell-schedule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ths-bell-schedule.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/api/hello.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/TimeTable.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/TimeTable.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schedules/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/schedules/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/Home.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/schedules/evenBlock.json" beforeDir="false" afterPath="$PROJECT_DIR$/schedules/evenBlock.schedule.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schedules/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/util/schedules.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schedules/oddBlock.json" beforeDir="false" afterPath="$PROJECT_DIR$/schedules/oddBlock.schedule.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schedules/traditional.json" beforeDir="false" afterPath="$PROJECT_DIR$/schedules/traditional.schedule.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +52,9 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/schedules" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/util" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -111,7 +117,8 @@
       <workItem from="1607450714656" duration="7161000" />
       <workItem from="1607534757800" duration="6134000" />
       <workItem from="1607553294913" duration="1822000" />
-      <workItem from="1607617209723" duration="675000" />
+      <workItem from="1607617209723" duration="2209000" />
+      <workItem from="1607639409062" duration="6022000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1607554453458</created>
@@ -120,7 +127,21 @@
       <option name="project" value="LOCAL" />
       <updated>1607554453458</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Remove conflicting files">
+      <created>1607617942271</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1607617942271</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add nextPeriod start">
+      <created>1607618022096</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1607618022096</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,7 +161,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="Remove conflicting files" />
+    <MESSAGE value="Add nextPeriod start" />
+    <MESSAGE value="Updated stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated stuff" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
