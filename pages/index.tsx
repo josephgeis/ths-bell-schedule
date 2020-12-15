@@ -7,7 +7,7 @@ import {TimeTable} from "../components/TimeTable";
 
 export default function ClockScreen() {
     let [currentTimestamp, updateTimestamp] = useState(Date.now())
-    let currentDateTime: DateTime = DateTime.fromMillis(currentTimestamp)
+    let currentDateTime: DateTime = DateTime.fromMillis(currentTimestamp).setZone("America/Los_Angeles")
 
     let schedule = getTodaySchedule(currentDateTime)
     const currentPeriod = schedule?.currentPeriod(currentDateTime)
@@ -39,6 +39,7 @@ export default function ClockScreen() {
                     }).toLocaleString(DateTime.TIME_SIMPLE)}</small></h2>
                     : null}
             </div>
+            {schedule ? <h3>{schedule.name}</h3> : null}
 
             {schedule ?
             <TimeTable schedule={schedule} dateTime={currentDateTime}/>

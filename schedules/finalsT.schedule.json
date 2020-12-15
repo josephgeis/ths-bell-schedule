@@ -1,0 +1,15 @@
+{
+  "name": "Tuesday Finals",
+  "periods": [
+    {
+      "name": "1",
+      "start": 29400,
+      "end": 36600
+    },
+    {
+      "name": "2",
+      "start": 37800,
+      "end": 45000
+    }
+  ]
+}

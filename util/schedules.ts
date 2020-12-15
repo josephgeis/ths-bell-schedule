@@ -7,8 +7,6 @@ type Period = {
     current: boolean
 }
 
-type PeriodList = [Period?]
-
 export class Schedule {
     name: string;
     periods: [Period?];
@@ -42,24 +40,26 @@ export class Schedule {
     }
 }
 
-const schedules: Record<string, Schedule> = {
-    evenBlock: new Schedule(require("../schedules/evenBlock.schedule.json")),
-    oddBlock: new Schedule(require("../schedules/oddBlock.schedule.json")),
-    traditional: new Schedule(require('../schedules/traditional.schedule.json')),
-    empty: new Schedule({name: "No Schedule", periods: []})
-}
+// @ts-ignore
+const schedulesContext = require.context("../schedules", true, /(\w+)\.schedule.json$/);
+let schedules: Record<string, Schedule> = {}
+schedulesContext.keys().forEach(function (key) {
+    schedules[key.replace(/\.\/(\w+)\.schedule.json$/, '$1')] = new Schedule(schedulesContext(key))
+});
 
+const dayMappingsContext = require("../schedules/dayMappings.json");
+let dayMappings: Record<number, Schedule> = {}
+Object.keys(dayMappingsContext).forEach(function(key) {
+    dayMappings[key] = schedules[dayMappingsContext[key]]
+})
 
-const dayMappings: Record<number, Schedule> = {
-    0: schedules.empty,
-    1: schedules.traditional,
-    2: schedules.evenBlock,
-    3: schedules.oddBlock,
-    4: schedules.evenBlock,
-    5: schedules.oddBlock,
-    6: schedules.empty
-}
+const overridesContext = require("../schedules/overrides.json");
+let overrides: Record<number, Schedule> = {}
+Object.keys(overridesContext).forEach(function(key) {
+    overrides[key] = schedules[overridesContext[key]]
+})
 
-export function getTodaySchedule(date): Schedule {
-    return dayMappings[date.weekday]
+export function getTodaySchedule(date: DateTime): Schedule {
+    const midnight = date.startOf("day").toSeconds()
+    return overrides[midnight] || dayMappings[date.weekday]
 }

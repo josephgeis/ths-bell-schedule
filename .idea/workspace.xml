@@ -5,15 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="19c2d0e1-ebe6-408c-8d04-32bb55df91d5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/ths-bell-schedule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ths-bell-schedule.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/schedules/dayMappings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/schedules/finalsR.schedule.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/schedules/finalsT.schedule.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/schedules/finalsW.schedule.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/schedules/overrides.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/TimeTable.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/TimeTable.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schedules/evenBlock.json" beforeDir="false" afterPath="$PROJECT_DIR$/schedules/evenBlock.schedule.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schedules/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/util/schedules.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schedules/oddBlock.json" beforeDir="false" afterPath="$PROJECT_DIR$/schedules/oddBlock.schedule.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schedules/traditional.json" beforeDir="false" afterPath="$PROJECT_DIR$/schedules/traditional.schedule.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/schedules.ts" beforeDir="false" afterPath="$PROJECT_DIR$/util/schedules.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,9 +60,10 @@
     <option name="myCommands">
       <command value="firefox -start-debugger-server 6000" />
       <command value="firefox --start-debugger-server 6000" />
+      <command value="yarn install" />
     </option>
   </component>
-  <component name="RunManager" selected="npm.dev">
+  <component name="RunManager" selected="Firefox Remote.Firefox Debug">
     <configuration name="Firefox Debug" type="FirefoxRemoteDebugType">
       <method v="2" />
     </configuration>
@@ -118,7 +118,7 @@
       <workItem from="1607534757800" duration="6134000" />
       <workItem from="1607553294913" duration="1822000" />
       <workItem from="1607617209723" duration="2209000" />
-      <workItem from="1607639409062" duration="6022000" />
+      <workItem from="1607639409062" duration="13231000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1607554453458</created>
@@ -141,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607618022096</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Updated stuff">
+      <created>1607964236901</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1607964236901</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,7 +171,8 @@
     <MESSAGE value="Remove conflicting files" />
     <MESSAGE value="Add nextPeriod start" />
     <MESSAGE value="Updated stuff" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated stuff" />
+    <MESSAGE value="Added finals schedules, schedule discovery" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added finals schedules, schedule discovery" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
