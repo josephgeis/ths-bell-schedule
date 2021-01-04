@@ -4,27 +4,31 @@
     {
       "name": "0",
       "start": 24000,
-      "end": 27900,
-      "current": true
+      "end": 27900
     },
     {
       "name": "2",
       "start": 28800,
-      "end": 35400
+      "end": 35100
+    },
+    {
+      "name": "Tutorial",
+      "start": 35100,
+      "end": 36900
     },
     {
       "name": "4",
-      "start": 36600,
-      "end": 43200
+      "start": 37800,
+      "end": 44100
     },
     {
       "name": "Lunch",
-      "start": 43200,
-      "end": 45900
+      "start": 44100,
+      "end": 46800
     },
     {
       "name": "6",
-      "start": 46500,
+      "start": 46800,
       "end": 53100
     }
   ]
