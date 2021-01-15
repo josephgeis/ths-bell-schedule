@@ -1,0 +1,40 @@
+{
+  "name": "Odd Block",
+  "periods": [
+    {
+      "name": "1",
+      "start": 28800,
+      "end": 32100
+    },
+    {
+      "name": "3",
+      "start": 32400,
+      "end": 35700
+    },
+    {
+      "name": "Break",
+      "start": 35700,
+      "end": 36300
+    },
+    {
+      "name": "5",
+      "start": 36600,
+      "end": 39900
+    },
+    {
+      "name": "7",
+      "start": 40200,
+      "end": 43500
+    },
+    {
+      "name": "Lunch",
+      "start": 43500,
+      "end": 45900
+    },
+    {
+      "name": "Support",
+      "start": 46800,
+      "end": 51300
+    }
+  ]
+}

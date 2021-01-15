@@ -1,12 +1,12 @@
 {
-    "name": "Bell Schedule",
+    "name": "THHS Bell Schedule",
     "dayMappings": {
         "0": null,
-        "1": null,
-        "2": null,
-        "3": null,
-        "4": null,
-        "5": null,
+        "1": "virtual",
+        "2": "oddBlock",
+        "3": "evenBlock",
+        "4": "oddBlock",
+        "5": "evenBlock",
         "6": null
     },
     "overrides": {
