@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="19c2d0e1-ebe6-408c-8d04-32bb55df91d5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/schedules/dayMappings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/schedules/finalsR.schedule.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/schedules/finalsT.schedule.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/schedules/finalsW.schedule.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/schedules/overrides.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schedules/dayMappings.json" beforeDir="false" afterPath="$PROJECT_DIR$/schedules/dayMappings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/util/schedules.ts" beforeDir="false" afterPath="$PROJECT_DIR$/util/schedules.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
@@ -41,10 +39,11 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/schedules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../wmata-react" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -61,9 +60,11 @@
       <command value="firefox -start-debugger-server 6000" />
       <command value="firefox --start-debugger-server 6000" />
       <command value="yarn install" />
+      <command value="yarn add @types/luxon" />
+      <command value="yarn add -D prettier" />
     </option>
   </component>
-  <component name="RunManager" selected="Firefox Remote.Firefox Debug">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="Firefox Debug" type="FirefoxRemoteDebugType">
       <method v="2" />
     </configuration>
@@ -118,7 +119,12 @@
       <workItem from="1607534757800" duration="6134000" />
       <workItem from="1607553294913" duration="1822000" />
       <workItem from="1607617209723" duration="2209000" />
-      <workItem from="1607639409062" duration="13231000" />
+      <workItem from="1607639409062" duration="14475000" />
+      <workItem from="1608149911264" duration="799000" />
+      <workItem from="1608791833876" duration="93000" />
+      <workItem from="1609724371562" duration="7279000" />
+      <workItem from="1609879322541" duration="51000" />
+      <workItem from="1610654844014" duration="2427000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1607554453458</created>
@@ -148,7 +154,21 @@
       <option name="project" value="LOCAL" />
       <updated>1607964236901</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added finals schedules, schedule discovery">
+      <created>1608071479177</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1608071479177</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Updated schedules">
+      <created>1609779370987</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1609779370987</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,7 +192,8 @@
     <MESSAGE value="Add nextPeriod start" />
     <MESSAGE value="Updated stuff" />
     <MESSAGE value="Added finals schedules, schedule discovery" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added finals schedules, schedule discovery" />
+    <MESSAGE value="Updated schedules" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated schedules" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -187,5 +208,9 @@
         <breakpoint enabled="true" type="javascript-exception" />
       </default-breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

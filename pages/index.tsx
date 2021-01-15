@@ -4,18 +4,27 @@ import {getTodaySchedule} from "../util/schedules";
 
 import {DateTime} from "luxon";
 import {TimeTable} from "../components/TimeTable";
+import Head from "next/head";
 
 export default function ClockScreen() {
-    let [currentTimestamp, updateTimestamp] = useState(Date.now())
-    let currentDateTime: DateTime = DateTime.fromMillis(currentTimestamp).setZone("America/Los_Angeles")
 
-    let schedule = getTodaySchedule(currentDateTime)
+    let [currentTimestamp, updateTimestamp] = useState(Date.now())
+    const currentDateTime: DateTime = DateTime.fromMillis(currentTimestamp).setZone("America/Los_Angeles")
+    const currentMinuteSeconds = currentDateTime.startOf("minute").diff(currentDateTime.startOf("day")).as("seconds")
+
+    const schedule = getTodaySchedule(currentDateTime)
     const currentPeriod = schedule?.currentPeriod(currentDateTime)
     const nextPeriod = schedule?.nextPeriod(currentDateTime)
+    const previousPeriod = schedule?.previousPeriod(currentDateTime)
+
+    const timeString = currentDateTime.toLocaleString(DateTime.TIME_SIMPLE)
+
+    const onPeriodBoundary = ((currentPeriod?.start == currentMinuteSeconds)
+        || (previousPeriod?.end == currentMinuteSeconds))
 
     useEffect(() => {
         // update time every second
-        let interval = setInterval(() => {
+        const interval = setInterval(() => {
             updateTimestamp(Date.now());
         }, 500);
         //
@@ -24,7 +33,11 @@ export default function ClockScreen() {
 
     return (
         <Container>
-            <h1>{currentDateTime.toLocaleString(DateTime.TIME_SIMPLE)}</h1>
+            <Head>
+                <title>{timeString}{currentPeriod ? ` - ${currentPeriod.name}` : null} {onPeriodBoundary ? "🔔" : null}</title>
+                <meta property="og:title" content="THS Bell Schedule" key="title"/>
+            </Head>
+            <h1>{timeString} {onPeriodBoundary ? "🔔" : null}</h1>
             <div className="row">
                 {currentPeriod ?
                     <h2 className="col">{currentPeriod.name} <small
@@ -42,8 +55,8 @@ export default function ClockScreen() {
             {schedule ? <h3>{schedule.name}</h3> : null}
 
             {schedule ?
-            <TimeTable schedule={schedule} dateTime={currentDateTime}/>
-            : null}
+                <TimeTable schedule={schedule} dateTime={currentDateTime}/>
+                : null}
         </Container>
     )
 }

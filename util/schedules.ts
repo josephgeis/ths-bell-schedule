@@ -16,7 +16,7 @@ export class Schedule {
     }
 
     currentPeriod(dateTime: DateTime): Period {
-        const time = (dateTime - dateTime.startOf('day')) / 1000
+        const time = dateTime.startOf("minute").diff(dateTime.startOf("day")).as("seconds")
 
         for (const period of this.periods) {
             if (time < period.end && time >= period.start) {
@@ -28,10 +28,22 @@ export class Schedule {
     }
 
     nextPeriod(dateTime: DateTime): Period {
-        const time = (dateTime - dateTime.startOf('day')) / 1000
+        const time = dateTime.startOf("minute").diff(dateTime.startOf("day")).as("seconds")
 
         for (const period of this.periods) {
             if (time < period.start) {
+                return period
+            }
+        }
+
+        return null;
+    }
+
+    previousPeriod(dateTime: DateTime): Period {
+        const time = dateTime.startOf("minute").diff(dateTime.startOf("day")).as("seconds")
+
+        for (const period of this.periods.reverse()) {
+            if (time >= period.end) {
                 return period
             }
         }
