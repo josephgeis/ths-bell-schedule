@@ -105,6 +105,16 @@ export default function ClockScreen() {
                     autoLoad={true}
                 />
             ) : null}
+            <footer>
+                <strong>{appName}</strong>{" "}
+                <span className="text-muted">
+                    Made by <a href="https://josephgeis.dev">Joseph Geis</a>,
+                    Open Source on{" "}
+                    <a href="https://github.com/juniorRubyist/ths-bell-schedule">
+                        GitHub
+                    </a>
+                </span>
+            </footer>
         </Container>
     ) : (
         <Head>
