@@ -1,4 +1,4 @@
-import {DateTime} from 'luxon';
+import { DateTime } from 'luxon'
 
 type Period = {
     name: string,
@@ -8,15 +8,15 @@ type Period = {
 }
 
 export class Schedule {
-    name: string;
-    periods: [Period?];
+    name: string
+    periods: [Period?]
 
     constructor(data) {
-        Object.assign(this, data);
+        Object.assign(this, data)
     }
 
     currentPeriod(dateTime: DateTime): Period {
-        const time = dateTime.startOf("minute").diff(dateTime.startOf("day")).as("seconds")
+        const time = dateTime.startOf('minute').diff(dateTime.startOf('day')).as('seconds')
 
         for (const period of this.periods) {
             if (time < period.end && time >= period.start) {
@@ -24,11 +24,11 @@ export class Schedule {
             }
         }
 
-        return null;
+        return null
     }
 
     nextPeriod(dateTime: DateTime): Period {
-        const time = dateTime.startOf("minute").diff(dateTime.startOf("day")).as("seconds")
+        const time = dateTime.startOf('minute').diff(dateTime.startOf('day')).as('seconds')
 
         for (const period of this.periods) {
             if (time < period.start) {
@@ -36,11 +36,11 @@ export class Schedule {
             }
         }
 
-        return null;
+        return null
     }
 
     previousPeriod(dateTime: DateTime): Period {
-        const time = dateTime.startOf("minute").diff(dateTime.startOf("day")).as("seconds")
+        const time = dateTime.startOf('minute').diff(dateTime.startOf('day')).as('seconds')
 
         for (const period of this.periods.slice().reverse()) {
             if (time >= period.end) {
@@ -48,30 +48,32 @@ export class Schedule {
             }
         }
 
-        return null;
+        return null
     }
 }
 
-// @ts-ignore
-const schedulesContext = require.context("../schedules", true, /(\w+)\.schedule.json$/);
-let schedules: Record<string, Schedule> = {}
-schedulesContext.keys().forEach(function (key) {
-    schedules[key.replace(/\.\/(\w+)\.schedule.json$/, '$1')] = new Schedule(schedulesContext(key))
-});
+const config = require('../config')
 
-const dayMappingsContext = require("../schedules/dayMappings.json");
+// @ts-ignore
+const schedulesContext = require.context('../config', true, /(\w+)\.schedule.json$/)
+let schedules: Record<string, Schedule> = {}
+schedulesContext.keys().forEach(function(key) {
+    schedules[key.replace(/\.\/(\w+)\.schedule.json$/, '$1')] = new Schedule(schedulesContext(key))
+})
+
+const dayMappingsContext = config.dayMappings
 let dayMappings: Record<number, Schedule> = {}
 Object.keys(dayMappingsContext).forEach(function(key) {
     dayMappings[key] = schedules[dayMappingsContext[key]]
 })
 
-const overridesContext = require("../schedules/overrides.json");
+const overridesContext = config.overrides
 let overrides: Record<number, Schedule> = {}
 Object.keys(overridesContext).forEach(function(key) {
     overrides[key] = schedules[overridesContext[key]]
 })
 
 export function getTodaySchedule(date: DateTime): Schedule {
-    const midnight = date.startOf("day").toSeconds()
+    const midnight = date.startOf('day').toSeconds()
     return overrides[midnight] || dayMappings[date.weekday]
 }
