@@ -54,6 +54,7 @@ export default function ClockScreen() {
                     {timeString}
                 </title>
                 <meta property="og:title" content={appName} key="title" />
+                <link rel="preload" href="ding.wav" type="audio/x-wav" />
             </Head>
             <h1>
                 {timeString} {onPeriodBoundary ? "🔔" : null}
@@ -109,6 +110,7 @@ export default function ClockScreen() {
         <Head>
             <meta property="og:title" content={appName} key="title" />
             <title>{appName}</title>
+            <link rel="preload" href="ding.wav" type="audio/x-wav" />
         </Head>
     );
 }
