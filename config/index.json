@@ -1,17 +1,15 @@
 {
-    "name": "THS Bell Schedule",
+    "name": "Bell Schedule",
     "dayMappings": {
         "0": null,
-        "1": "traditional",
-        "2": "evenBlock",
-        "3": "oddBlock",
-        "4": "evenBlock",
-        "5": "oddBlock",
+        "1": null,
+        "2": null,
+        "3": null,
+        "4": null,
+        "5": null,
         "6": null
     },
     "overrides": {
-        "1608019200": "finalsT",
-        "1608105600": "finalsW",
-        "1608192000": "finalsR"
+
     }
 }
