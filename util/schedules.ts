@@ -42,7 +42,7 @@ export class Schedule {
     previousPeriod(dateTime: DateTime): Period {
         const time = dateTime.startOf("minute").diff(dateTime.startOf("day")).as("seconds")
 
-        for (const period of this.periods.reverse()) {
+        for (const period of this.periods.slice().reverse()) {
             if (time >= period.end) {
                 return period
             }
