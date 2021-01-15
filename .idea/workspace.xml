@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="19c2d0e1-ebe6-408c-8d04-32bb55df91d5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/ding.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util/DTMFgenerator.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/index.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/index.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schedules/dayMappings.json" beforeDir="false" afterPath="$PROJECT_DIR$/schedules/dayMappings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/schedules.ts" beforeDir="false" afterPath="$PROJECT_DIR$/util/schedules.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,9 +22,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -41,17 +42,20 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../wmata-react" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/util" />
     <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
     <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/util" />
       <recent name="$PROJECT_DIR$/schedules" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/util" />
     </key>
   </component>
@@ -62,6 +66,10 @@
       <command value="yarn install" />
       <command value="yarn add @types/luxon" />
       <command value="yarn add -D prettier" />
+      <command value="yarn add @types/next" />
+      <command value="yarn remove @types/next" />
+      <command value="yarn add react-sounds" />
+      <command value="yarn add react-sound" />
     </option>
   </component>
   <component name="RunManager" selected="npm.dev">
@@ -124,7 +132,7 @@
       <workItem from="1608791833876" duration="93000" />
       <workItem from="1609724371562" duration="7279000" />
       <workItem from="1609879322541" duration="51000" />
-      <workItem from="1610654844014" duration="2427000" />
+      <workItem from="1610654844014" duration="8926000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1607554453458</created>
@@ -168,7 +176,28 @@
       <option name="project" value="LOCAL" />
       <updated>1609779370987</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add bell icon on start/end of periods, time in title.">
+      <created>1610671926957</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1610671926957</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Fixed flipping arrays issue">
+      <created>1610674628639</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1610674628639</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Started code restyling, consolidated configs">
+      <created>1610730910198</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1610730910198</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,7 +208,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -193,17 +234,13 @@
     <MESSAGE value="Updated stuff" />
     <MESSAGE value="Added finals schedules, schedule discovery" />
     <MESSAGE value="Updated schedules" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated schedules" />
+    <MESSAGE value="Add bell icon on start/end of periods, time in title." />
+    <MESSAGE value="Fixed flipping arrays issue" />
+    <MESSAGE value="Started code restyling, consolidated configs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Started code restyling, consolidated configs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/components/TimeTable.tsx</url>
-          <line>22</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
       <default-breakpoints>
         <breakpoint enabled="true" type="javascript-exception" />
       </default-breakpoints>
