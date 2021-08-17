@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19c2d0e1-ebe6-408c-8d04-32bb55df91d5" name="Default Changelist" comment="">
+    <list default="true" id="19c2d0e1-ebe6-408c-8d04-32bb55df91d5" name="Default Changelist" comment="Preload bell sound">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/evenBlock.schedule.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/finalsR.schedule.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/finalsT.schedule.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/finalsW.schedule.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/index.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/index.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/oddBlock.schedule.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/traditional.schedule.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/evenBlock.schedule.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/evenBlock.schedule.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/oddBlock.schedule.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/oddBlock.schedule.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/traditional.schedule.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/traditional.schedule.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +38,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/util" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
     <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
@@ -133,6 +129,9 @@
       <workItem from="1609724371562" duration="7279000" />
       <workItem from="1609879322541" duration="51000" />
       <workItem from="1610654844014" duration="10957000" />
+      <workItem from="1611259368945" duration="100000" />
+      <workItem from="1612813616085" duration="49000" />
+      <workItem from="1629165547557" duration="676000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1607554453458</created>
