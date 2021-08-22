@@ -11,7 +11,9 @@ import Sound from "react-sound";
 // @ts-ignore
 import { name as appName } from "../config";
 
-export default function ClockScreen() {
+export default function ClockScreen(
+    { scheduleName }: { scheduleName: string } = { scheduleName: null }
+) {
     let [showContent, updateVisibility] = useState(false);
 
     let [currentTimestamp, updateTimestamp] = useState(Date.now());
@@ -23,7 +25,7 @@ export default function ClockScreen() {
         .diff(currentDateTime.startOf("day"))
         .as("seconds");
 
-    const schedule = getTodaySchedule(currentDateTime);
+    const schedule = getTodaySchedule(currentDateTime, scheduleName);
     const currentPeriod = schedule?.currentPeriod(currentDateTime);
     const nextPeriod = schedule?.nextPeriod(currentDateTime);
     const previousPeriod = schedule?.previousPeriod(currentDateTime);
