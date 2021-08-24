@@ -19,6 +19,6 @@ export async function getStaticProps(context) {
 export async function getStaticPaths() {
     return {
         paths: getSchedulePaths(),
-        fallback: true,
+        fallback: false,
     };
 }

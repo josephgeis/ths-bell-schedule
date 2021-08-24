@@ -1,6 +1,6 @@
 import { Container } from "react-bootstrap";
 import { useEffect, useState } from "react";
-import { getTodaySchedule } from "../util/schedules";
+import { getScheduleNames, getTodaySchedule } from "../util/schedules";
 
 import { DateTime } from "luxon";
 import { TimeTable } from "../components/TimeTable";
@@ -10,6 +10,7 @@ import Sound from "react-sound";
 
 // @ts-ignore
 import { name as appName } from "../config";
+import SchedulesList from "../components/SchedulesList";
 
 export default function ClockScreen(
     { scheduleName }: { scheduleName: string } = { scheduleName: null }
@@ -29,6 +30,7 @@ export default function ClockScreen(
     const currentPeriod = schedule?.currentPeriod(currentDateTime);
     const nextPeriod = schedule?.nextPeriod(currentDateTime);
     const previousPeriod = schedule?.previousPeriod(currentDateTime);
+    const availableSchedules = getScheduleNames();
 
     const timeString = currentDateTime.toLocaleString(DateTime.TIME_SIMPLE);
 
@@ -96,6 +98,8 @@ export default function ClockScreen(
             {schedule ? (
                 <TimeTable schedule={schedule} dateTime={currentDateTime} />
             ) : null}
+
+            <SchedulesList availableSchedules={availableSchedules} />
 
             {onPeriodBoundary && lastSoundTime != currentMinuteSeconds ? (
                 <Sound
