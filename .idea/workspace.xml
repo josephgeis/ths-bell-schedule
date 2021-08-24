@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19c2d0e1-ebe6-408c-8d04-32bb55df91d5" name="Default Changelist" comment="Preload bell sound">
+    <list default="true" id="19c2d0e1-ebe6-408c-8d04-32bb55df91d5" name="Default Changelist" comment="Added other schedules list">
+      <change afterPath="$PROJECT_DIR$/components/SchedulesList.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/SchedulesList.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/evenBlock.schedule.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/evenBlock.schedule.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/oddBlock.schedule.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/oddBlock.schedule.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/traditional.schedule.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/traditional.schedule.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/index.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/index.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/[name].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/[name].tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/schedules.ts" beforeDir="false" afterPath="$PROJECT_DIR$/util/schedules.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +28,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1lLLJEjqddrPY2ED5nKZ0b35x7X" />
@@ -39,6 +47,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
     <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />

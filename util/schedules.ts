@@ -97,10 +97,12 @@ export function getTodaySchedule(
 }
 
 export function getScheduleNames() {
-    return Object.keys(schedules).map(key => ({
-        key,
-        name: schedules[key].name,
-    }));
+    return Object.keys(schedules)
+        .filter(key => !config.excludes.includes(key))
+        .map(key => ({
+            key,
+            name: schedules[key].name,
+        }));
 }
 
 export function getSchedulePaths() {
