@@ -1,5 +1,5 @@
 {
-    "name": "THS Bell Schedule",
+    "name": "Tesoro Bell Schedule",
     "dayMappings": {
         "0": null,
         "1": "traditional",
@@ -14,7 +14,10 @@
         "1608105600": "finalsW",
         "1608192000": "finalsR",
         "1612771200": "oddBlock",
-        "1630652400": "minimum"
+        "1630652400": "minimum",
+        "1639468800": "finalsT",
+        "1639555200": "finalsW",
+        "1639641600": "finalsR"
     },
     "excludes": [
 
