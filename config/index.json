@@ -17,9 +17,8 @@
         "1630652400": "minimum",
         "1639468800": "finalsT",
         "1639555200": "finalsW",
-        "1639641600": "finalsR"
+        "1639641600": "finalsR",
+        "1643616000": "minimum"
     },
-    "excludes": [
-
-    ]
+    "excludes": []
 }
