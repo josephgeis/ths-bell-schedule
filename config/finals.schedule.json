@@ -1,0 +1,15 @@
+{
+    "name": "Finals",
+    "periods": [
+        {
+            "name": "Exam #1",
+            "start": 30600,
+            "end": 37800
+        },
+        {
+            "name": "Exam #2",
+            "start": 38700,
+            "end": 45900
+        }
+    ]
+}

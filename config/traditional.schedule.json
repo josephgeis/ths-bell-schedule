@@ -3,48 +3,48 @@
     "periods": [
         {
             "name": "PLC",
-            "start": 27000,
-            "end": 30000
+            "start": 28800,
+            "end": 31800
         },
         {
             "name": "1",
-            "start": 30600,
-            "end": 33300
+            "start": 32400,
+            "end": 35100
         },
         {
             "name": "2",
-            "start": 33900,
-            "end": 36600
+            "start": 35700,
+            "end": 38400
         },
         {
             "name": "Tutorial",
-            "start": 37200,
-            "end": 38100
+            "start": 39000,
+            "end": 39900
         },
         {
             "name": "3",
-            "start": 38700,
-            "end": 41400
+            "start": 40500,
+            "end": 43200
         },
         {
             "name": "4",
-            "start": 42000,
-            "end": 44700
-        },
-        {
-            "name": "Lunch",
-            "start": 44700,
+            "start": 43800,
             "end": 46500
         },
         {
+            "name": "Lunch",
+            "start": 46500,
+            "end": 48300
+        },
+        {
             "name": "5",
-            "start": 47100,
-            "end": 49800
+            "start": 48900,
+            "end": 51600
         },
         {
             "name": "6",
-            "start": 50400,
-            "end": 53100
+            "start": 52200,
+            "end": 54900
         }
     ]
 }

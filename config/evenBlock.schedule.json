@@ -3,33 +3,33 @@
     "periods": [
         {
             "name": "0",
-            "start": 24600,
-            "end": 28320
+            "start": 26400,
+            "end": 30060
         },
         {
             "name": "2",
-            "start": 28800,
-            "end": 34800
+            "start": 30600,
+            "end": 36600
         },
         {
             "name": "Tutorial",
-            "start": 35400,
-            "end": 37800
+            "start": 37200,
+            "end": 39600
         },
         {
             "name": "4",
-            "start": 38700,
-            "end": 44700
-        },
-        {
-            "name": "Lunch",
-            "start": 44700,
+            "start": 40500,
             "end": 46500
         },
         {
+            "name": "Lunch",
+            "start": 46500,
+            "end": 48300
+        },
+        {
             "name": "6",
-            "start": 47100,
-            "end": 53100
+            "start": 48900,
+            "end": 54900
         }
     ]
 }
