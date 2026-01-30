@@ -1,5 +1,5 @@
 {
-    "name": "Traditional/Late Start",
+    "name": "Monday Schedule",
     "periods": [
         {
             "name": "PLC",
@@ -17,7 +17,7 @@
             "end": 38400
         },
         {
-            "name": "Tutorial",
+            "name": "Homeroom",
             "start": 39000,
             "end": 39900
         },
